@@ -1,0 +1,88 @@
+@import 'settings.styl'
+
+@media (max-width: 1280px) {
+  body {
+    .content-other {
+      padding-bottom: 1%
+      padding-right: 3%
+    }
+    .content-block {
+      margin-bottom: 4%
+      width: 100%
+      .content-item {
+        padding-bottom: 0
+        padding-right: 0
+      }
+    }
+    .photo-block {
+      height: 200px
+      flex-direction: row
+      margin-bottom: 4%
+      overflow: auto
+      position: relative
+      width: 100%
+    }
+    .js_slides {
+      flex-direction: row
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  body {
+    .header {
+      width: 210px
+      .logo h1 {
+    	  font-size: 1.3rem
+      }
+      .header-menu-item {
+    	  font-size: 1rem
+      }
+    }
+    .content {
+      margin-left: 210px
+      width: calc(100% - 210px)
+      .slider {
+        width: calc(100% - 330px)
+      }
+      .slide {
+        h2 {
+          font-size: 1.7rem
+        }
+        .slider-block {
+          .slider-block-text {
+            min-width: 430px
+          }
+        }
+      }
+      .pannel {
+        width: 330px
+        h3 {
+          font-size: 1.1rem
+        }
+      }
+    }
+    .footer {
+		  width: 210px
+    }
+  }
+}
+@media (max-width: 1420px)
+  body
+    .content
+      .slider .slider-block
+    	  &:hover .prev
+          left: -7%
+          opacity: 1
+    	  &:hover .next
+          right: -7%
+          opacity: 1
+      .slide h2 {
+        padding-left: 0
+        text-align: center
+      }
+
+@media (min-width: 1800px)
+  body
+    .content .slide .slider-block .slider-block-text
+      font-size: 1.3rem
